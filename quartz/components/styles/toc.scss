@@ -3,6 +3,10 @@
 .toc {
   display: flex;
   flex-direction: column;
+  &.desktop-only {
+    display: flex;
+    max-height: 90%;
+  }
 
   overflow-y: hidden;
   min-height: 4rem;

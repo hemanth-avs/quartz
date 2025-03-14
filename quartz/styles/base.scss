@@ -85,6 +85,7 @@ a {
     padding: 0 0.1rem;
     border-radius: 5px;
     line-height: 1.4rem;
+    color: red;
 
     &:has(> img) {
       background-color: transparent;
@@ -357,6 +358,14 @@ h6 {
   }
 }
 
+#links {
+  font-size: 1.12rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
 // typography improvements
 h1 {
   font-size: 1.75rem;
@@ -599,4 +608,8 @@ iframe.pdf {
   background: var(--secondary);
   transition: width 0.2s ease;
   z-index: 9999;
+}
+
+.a.internal {
+  color: red;
 }

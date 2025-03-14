@@ -22,6 +22,11 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
   ],
+  right: [
+    Component.Darkmode(),
+    Component.DesktopOnly(Component.Explorer()),
+    Component.Backlinks(),
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
@@ -30,16 +35,10 @@ export const defaultContentPageLayout: PageLayout = {
         {
           Component: Component.Search(),
           grow: true,
-        },
-        { Component: Component.Darkmode() },
+        }
       ],
     }),
-    Component.Explorer(),
-  ],
-  right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
   ],
 }
 
